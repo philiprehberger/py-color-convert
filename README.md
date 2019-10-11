@@ -1,5 +1,9 @@
 # philiprehberger-color-convert
 
+[![Tests](https://github.com/philiprehberger/py-color-convert/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/py-color-convert/actions/workflows/publish.yml)
+[![PyPI version](https://img.shields.io/pypi/v/philiprehberger-color-convert.svg)](https://pypi.org/project/philiprehberger-color-convert/)
+[![License](https://img.shields.io/github/license/philiprehberger/py-color-convert)](LICENSE)
+
 Convert between color formats: hex, RGB, HSL, HSV, CMYK, and named CSS colors.
 
 ## Install
