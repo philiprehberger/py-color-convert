@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "philiprehberger-color-convert"
-version = "0.1.5"
+version = "0.1.6"
 description = "Convert between color formats: hex, RGB, HSL, HSV, CMYK, and named CSS colors"
 readme = "README.md"
 license = "MIT"
@@ -31,3 +31,9 @@ Changelog = "https://github.com/philiprehberger/py-color-convert/blob/main/CHANG
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/philiprehberger_color_convert"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.mypy]
+strict = true
