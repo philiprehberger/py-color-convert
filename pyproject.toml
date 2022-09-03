@@ -4,13 +4,13 @@ build-backend = "hatchling.build"
 
 [project]
 name = "philiprehberger-color-convert"
-version = "0.1.6"
+version = "0.1.7"
 description = "Convert between color formats: hex, RGB, HSL, HSV, CMYK, and named CSS colors"
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"
 authors = [{ name = "Philip Rehberger" }]
-keywords = ["color", "convert", "hex", "rgb", "hsl", "css"]
+keywords = ["color", "convert", "hex", "rgb", "hsl"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
