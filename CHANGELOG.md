@@ -1,9 +1,17 @@
 # Changelog
+
+## 0.1.8
+
+- Add css_color_names() function for discovering available CSS colors
+- Add method chaining example to README
+
 ## 0.1.7
 
 - Trim keywords to match pyproject template guide
 
-## 0.1.6- Add pytest and mypy tool configuration to pyproject.toml
+## 0.1.6
+
+- Add pytest and mypy tool configuration to pyproject.toml
 
 ## 0.1.5
 

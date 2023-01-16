@@ -64,6 +64,14 @@ comp = c.complement()
 inv = c.invert()
 ```
 
+### Chaining
+
+```python
+# Each method returns a new Color — chain freely
+warm = Color("#3498db").desaturate(20).lighten(10)
+print(warm.hex)
+```
+
 ### Palette Generation
 
 ```python
@@ -107,6 +115,7 @@ white.contrast_ratio(black)  # 21.0
 | `.triadic()` | List of 3 triadic Colors |
 | `.split_complementary()` | List of 3 split-complementary Colors |
 | `.contrast_ratio(other)` | WCAG contrast ratio (float) |
+| `css_color_names()` | Sorted list of all 148 supported CSS color names |
 
 
 ## Development
