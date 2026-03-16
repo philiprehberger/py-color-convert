@@ -108,6 +108,14 @@ white.contrast_ratio(black)  # 21.0
 | `.split_complementary()` | List of 3 split-complementary Colors |
 | `.contrast_ratio(other)` | WCAG contrast ratio (float) |
 
+
+## Development
+
+```bash
+pip install -e .
+python -m pytest tests/ -v
+```
+
 ## License
 
 MIT
