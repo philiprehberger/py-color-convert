@@ -24,9 +24,10 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/philiprehberger/py-color-convert"
+Homepage = "https://github.com/philiprehberger/py-color-convert#readme"
 Repository = "https://github.com/philiprehberger/py-color-convert"
 Issues = "https://github.com/philiprehberger/py-color-convert/issues"
+Changelog = "https://github.com/philiprehberger/py-color-convert/blob/main/CHANGELOG.md"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/philiprehberger_color_convert"]

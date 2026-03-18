@@ -6,7 +6,7 @@
 
 Convert between color formats: hex, RGB, HSL, HSV, CMYK, and named CSS colors.
 
-## Install
+## Installation
 
 ```bash
 pip install philiprehberger-color-convert
