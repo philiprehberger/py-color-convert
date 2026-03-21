@@ -5,7 +5,7 @@ from __future__ import annotations
 import colorsys
 import re
 
-__all__ = ["Color"]
+__all__ = ["Color", "css_color_names"]
 
 _CSS_COLORS: dict[str, str] = {
     "aliceblue": "#f0f8ff",
@@ -426,3 +426,8 @@ class Color:
 
     def __hash__(self) -> int:
         return hash((self._r, self._g, self._b))
+
+
+def css_color_names() -> list[str]:
+    """Return a sorted list of all supported CSS color names."""
+    return sorted(_CSS_COLORS)
