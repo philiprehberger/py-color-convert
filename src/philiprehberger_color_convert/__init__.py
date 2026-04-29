@@ -405,6 +405,25 @@ class Color:
             Color.from_hsl((h + 210) % 360, s, l),
         ]
 
+    def mix(self, other: Color, weight: float = 0.5) -> Color:
+        """Return a new Color blended with ``other`` in RGB space.
+
+        Args:
+            other: The Color to blend with.
+            weight: Blend ratio. ``0.0`` returns ``self`` unchanged,
+                ``1.0`` returns ``other``, ``0.5`` (the default) is an
+                even mix.
+
+        Raises:
+            ValueError: If ``weight`` is outside ``[0.0, 1.0]``.
+        """
+        if not 0.0 <= weight <= 1.0:
+            raise ValueError(f"weight must be between 0.0 and 1.0, got {weight}")
+        r = round(self._r * (1 - weight) + other._r * weight)
+        g = round(self._g * (1 - weight) + other._g * weight)
+        b = round(self._b * (1 - weight) + other._b * weight)
+        return Color.from_rgb(r, g, b)
+
     def contrast_ratio(self, other: Color) -> float:
         """Calculate the WCAG 2.0 contrast ratio between this Color and another.
 

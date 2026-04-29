@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.0 (2026-04-29)
+
+- Add `Color.mix(other, weight=0.5)` to blend two colors in RGB space
+- Replace import-only stub with comprehensive test suite (parsing, factory round-trips, manipulation, palettes, contrast, mixing)
+
 ## 0.1.9 (2026-03-31)
 
 - Standardize README to 3-badge format with emoji Support section

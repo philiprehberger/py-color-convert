@@ -91,6 +91,17 @@ black = Color("#000000")
 white.contrast_ratio(black)  # 21.0
 ```
 
+### Mixing Colors
+
+```python
+red = Color("#ff0000")
+blue = Color("#0000ff")
+
+red.mix(blue)              # 50/50 mix → Color('#800080')
+red.mix(blue, weight=0.25) # 25% blue   → closer to red
+red.mix(blue, weight=0.75) # 75% blue   → closer to blue
+```
+
 ## API
 
 | Method / Property | Description |
@@ -115,6 +126,7 @@ white.contrast_ratio(black)  # 21.0
 | `.triadic()` | List of 3 triadic Colors |
 | `.split_complementary()` | List of 3 split-complementary Colors |
 | `.contrast_ratio(other)` | WCAG contrast ratio (float) |
+| `.mix(other, weight=0.5)` | Blend with another Color in RGB space |
 | `css_color_names()` | Sorted list of all 148 supported CSS color names |
 
 ## Development
